@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Cuenca HidroSed</name>
+<Style id="basin_style">
+  <LineStyle><color>ff0000ff</color><width>2</width></LineStyle>
+  <PolyStyle><color>330000ff</color></PolyStyle>
+</Style>
+<Style id="outlet_original"><IconStyle><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon></IconStyle></Style>
+<Style id="outlet_snapped"><IconStyle><scale>1.1</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon></IconStyle></Style>
+<Placemark>
+  <name>Cuenca delimitada automática</name>
+  <styleUrl>#basin_style</styleUrl>
+  <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.97030000,-30.02985000,0 -71.00015000,-30.02970000,0 -71.00000000,-29.99985000,0 -70.97015000,-30.00000000,0 -70.97030000,-30.02985000,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+</Placemark>
+<Placemark><name>Punto de control original</name><styleUrl>#outlet_original</styleUrl><Point><coordinates>-70.98500000,-30.02850000,0</coordinates></Point></Placemark>
+<Placemark><name>Punto ajustado al cauce</name><styleUrl>#outlet_snapped</styleUrl><Point><coordinates>-70.98500000,-30.02970000,0</coordinates></Point></Placemark>
+</Document>
+</kml>
